@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(37, 139, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    border:3px solid #000;
+    position:relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#storiyan{
+    height: 120px;
+    width: 100%;
+    border-bottom: 0.8px solid #555 ;
+    padding:15px;
+    white-space: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+
+}
+/*the webkit scrollbar is used to remove the scrollbar we get after typing overflow-x:auto*/
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    border: 3px solid red;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+  height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}

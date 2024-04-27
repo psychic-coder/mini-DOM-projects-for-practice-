@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white
+}
+#main{
+    height: 100%;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cursor{
+    height: 20px;
+    width:20px;
+    background-color: white;
+/*mix-blend-mode:gives us a different colour , when the cursor is hovered on the  object having  same colour  as of that of the cursor*/
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    transition: linear 0.2s;
+
+}
+h1{
+    font-size: 9vw;
+    font-weight: 900;
+
+}
